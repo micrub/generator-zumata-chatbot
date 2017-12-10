@@ -60,10 +60,6 @@ $ yo zumata-chabot
 - Yeoman can be too opinionated at times but is easily convinced not to be.
 - Feel free to [learn more about Yeoman][yeoman-url].
 
-## Throughput
-
-[![Throughput Graph](https://graphs.waffle.io/Zumata/generator-zumata-chatbot/throughput.svg)](https://waffle.io/Zumata/generator-zumata-chatbot/metrics/throughput)
-
 ## License
 
 [MIT License](http://the-zumata-team.mit-license.org/) © The Zumata Team
@@ -78,11 +74,11 @@ $ yo zumata-chabot
 
 [nodei-badge]: https://nodei.co/npm/generator-zumata-chatbot.png?downloads=true&downloadRank=true&stars=true
 
-[travis-badge]: https://img.shields.io/travis/rust-lang/rust.svg?style=flat-square
-[version-badge]: https://img.shields.io/npm/v/delvery.svg?style=flat-square
-[downloads-badge]: https://img.shields.io/npm/dm/delvery.svg?style=flat-square
+[travis-badge]: https://img.shields.io/travis/Zumata/generator-zumata-chatbot.svg?style=flat-square
+[version-badge]: https://img.shields.io/npm/v/generator-zumata-chatbot.svg?style=flat-square
+[downloads-badge]: https://img.shields.io/npm/dm/generator-zumata-chatbot.svg?style=flat-square
 [mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[daviddm-badge]: https://img.shields.io/david/expressjs/express.svg?style=flat-square
+[daviddm-badge]: https://img.shields.io/david/Zumata/generator-zumata-chatbot.svg?style=flat-square
 [nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge
 
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
