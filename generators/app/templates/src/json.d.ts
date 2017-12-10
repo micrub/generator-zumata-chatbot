@@ -1,4 +1,4 @@
-declare module "*.json" {
+declare module '*.json' {
   export const value: {
     [key: string]: any
   };

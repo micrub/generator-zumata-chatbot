@@ -7,7 +7,7 @@ export declare interface SendAsTextMessage {
 /** Import typings */
 import {
   FacebookEventSender as SendAsTextRecipient,
-} from "./handle-receive-message";
+} from './handle-receive-message';
 
 /** Import project dependencies */
 import * as pMapSeries from 'p-map-series';
