@@ -1,6 +1,6 @@
 {
   "name": "generator-zumata-chatbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description":
     "Generator for chatbot development using Facebook Messenger and DialogFlow",
   "keywords": [
@@ -24,7 +24,7 @@
   "repository": "git@github.com:Zumata/generator-zumata-chatbot.git",
   "scripts": {
     "precommit": "lint-staged",
-    "prepublish": "nsp check",
+    "prepublishOnly": "nsp check",
     "pretest": "eslint .",
     "test": "jest"
   },
