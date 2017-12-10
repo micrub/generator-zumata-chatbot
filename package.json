@@ -1,9 +1,11 @@
 {
   "name": "generator-zumata-chatbot",
   "version": "0.0.0",
-  "description": "Generator for chatbot development using Facebook Messenger",
+  "description":
+    "Generator for chatbot development using Facebook Messenger and DialogFlow",
   "keywords": [
     "chatbot",
+    "dialogflow",
     "facebook-messenger",
     "generator",
     "messenger-chatbot",

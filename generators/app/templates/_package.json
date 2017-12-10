@@ -6,6 +6,7 @@
   "keywords": [
     "<%= packageName %>",
     "chatbot",
+    "dialogflow",
     "facebook-messenger",
     "npm",
     "zumata"
