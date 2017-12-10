@@ -8,7 +8,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "removeComments": true,
-    "traceResolution": true,
+    "traceResolution": false,
     "newLine": "LF",
     "experimentalDecorators": true,
     "lib": ["esnext", "esnext.asynciterable"],
