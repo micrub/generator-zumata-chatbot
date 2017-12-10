@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowUnusedLabels": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "traceResolution": true,
+    "newLine": "LF",
+    "experimentalDecorators": true,
+    "lib": ["esnext", "esnext.asynciterable"],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext",
+    "jsx": "react",
+    "jsxFactory": "h",
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

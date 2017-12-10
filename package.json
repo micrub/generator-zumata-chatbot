@@ -2,7 +2,16 @@
   "name": "generator-zumata-chatbot",
   "version": "0.0.0",
   "description": "Generator for chatbot development using Facebook Messenger",
+  "keywords": [
+    "chatbot",
+    "facebook-messenger",
+    "generator",
+    "messenger-chatbot",
+    "yeoman-generator",
+    "zumata"
+  ],
   "homepage": "https://github.com/Zumata/generator-zumata-chatbot",
+  "license": "MIT",
   "author": {
     "name": "Rong Sen Ng",
     "email": "rong_sen.ng@zumata.com",
@@ -10,64 +19,57 @@
   },
   "files": ["generators"],
   "main": "generators/index.js",
-  "keywords": [
-    "generator",
-    "chatbot",
-    "facebook-messenger",
-    "messenger-chatbot",
-    "zumata",
-    "yeoman-generator"
-  ],
-  "devDependencies": {
-    "yeoman-test": "^1.7.0",
-    "yeoman-assert": "^3.1.0",
-    "coveralls": "^2.13.1",
-    "nsp": "^2.6.3",
-    "eslint": "^4.1.0",
-    "prettier": "^1.7.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.1",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-config-xo": "^0.18.2",
-    "jest": "^21.0.0",
-    "jest-cli": "^21.0.0"
-  },
-  "dependencies": {
-    "yeoman-generator": "^2.0.1",
-    "chalk": "^2.1.0",
-    "yosay": "^2.0.1"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
+  "repository": "git@github.com:Zumata/generator-zumata-chatbot.git",
   "scripts": {
+    "precommit": "lint-staged",
     "prepublish": "nsp check",
     "pretest": "eslint .",
-    "precommit": "lint-staged",
     "test": "jest"
   },
-  "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
-  },
   "eslintConfig": {
-    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
     },
+    "extends": ["xo", "prettier"],
+    "plugins": ["prettier"],
     "rules": {
       "prettier/prettier": [
         "error",
         {
           "singleQuote": true,
-          "printWidth": 90
+          "printWidth": 100
         }
       ]
-    },
-    "plugins": ["prettier"]
+    }
   },
-  "repository": "git@github.com:Zumata/generator-zumata-chatbot.git",
-  "license": "MIT"
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "yeoman-generator": "^2.0.1",
+    "yosay": "^2.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.13.1",
+    "eslint": "^4.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-prettier": "^2.2.0",
+    "husky": "^0.14.3",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lint-staged": "^4.2.1",
+    "nsp": "^2.6.3",
+    "prettier": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  }
 }

@@ -1,0 +1,80 @@
+{
+  "name": "<%= packageName %>",
+  "version": "0.0.0",
+  "private": true,
+  "description": "<%= description %>",
+  "keywords": [
+    "<%= packageName %>",
+    "chatbot",
+    "facebook-messenger",
+    "npm",
+    "zumata"
+  ],
+  "homepage": "<%= homepage %>",
+  "license": "MIT",
+  "author": {
+    "name": "The Zumata Team",
+    "email": "gary.theis@zumata.com",
+    "url": "https://github.com/Zumata"
+  },
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "<%= repoUrl %>"
+  },
+  "scripts": {
+    "build":
+      "npm run ts && cross-env NODE_ENV=production gulp build && npm run cleanup",
+    "build:debug": "npm run ts && gulp build && npm run cleanup",
+    "check": "npm run lint && npm run nsp",
+    "cleanup": "rm -rf write-env-sample.js gulpfile.js",
+    "precommit": "npm run check && npm run env",
+    "debug":
+      "env-cmd ./.env node --inspect --max-old-space-size=8192 --nouse-idle-notification --expose-gc --expose-wasm -r @std/esm dist/",
+    "env":
+      "tsc -t esnext -m esnext write-env-sample.ts && node -r @std/esm write-env-sample.js && npm run cleanup",
+    "gulp": "npm run ts && gulp",
+    "lint": "tslint --project tsconfig.json --config tslint.json",
+    "lint:fix": "tslint -p . -c tslint.json --fix",
+    "nsp": "nsp check",
+    "serve":
+      "node --max-old-space-size=8192 --nouse-idle-notification --expose-gc --expose-wasm -r @std/esm dist/",
+    "start": "npm run build && npm run serve",
+    "ts": "tsc gulpfile.ts"
+  },
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "execall": "^1.0.0",
+    "make-fetch-happen": "^2.6.0",
+    "p-map-series": "^1.0.0"
+  },
+  "devDependencies": {
+    "@std/esm": "^0.18.0",
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.57",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0",
+    "cross-env": "^5.1.1",
+    "del": "^3.0.0",
+    "env-cmd": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-typescript": "^3.2.3",
+    "husky": "^0.14.3",
+    "nsp": "^3.1.0",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "^5.4.2",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.2"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.5.1"
+  },
+  "@std/esm": "cjs"
+}
