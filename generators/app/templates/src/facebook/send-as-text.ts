@@ -10,7 +10,7 @@ import {
 } from './handle-receive-message';
 
 /** Import project dependencies */
-import * as pMapSeries from 'p-map-series';
+import pMapSeries from 'p-map-series';
 
 /** Import other modules */
 import sendTypingBubble from './send-typing-bubble';
@@ -33,7 +33,7 @@ export async function sendAsText(
     const fetchOpts = {
       method: 'POST',
       compress: true,
-      timeout: process.env.APP_FETCH_TIMEOUT,
+      timeout: +process.env.APP_FETCH_TIMEOUT,
       headers: {
         'content-type': 'application/json',
       },

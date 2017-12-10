@@ -5,7 +5,7 @@ import { FacebookEventSender } from '../facebook/handle-receive-message';
 import { DialogFlowIntentResult, DialogFlowIntentResultFulfillmentMessages } from './text-request';
 
 /** Import project dependencies */
-import * as pMapSeries from 'p-map-series';
+import pMapSeries from 'p-map-series';
 
 /** Import other modules */
 // tslint:disable-next-line:no-duplicate-imports

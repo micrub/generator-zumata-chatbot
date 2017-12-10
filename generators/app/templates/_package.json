@@ -45,13 +45,14 @@
     "ts": "tsc gulpfile.ts"
   },
   "dependencies": {
+    "@std/esm": "^0.18.0",
     "apiai": "^4.0.3",
     "execall": "^1.0.0",
+    "express": "^4.16.2",
     "make-fetch-happen": "^2.6.0",
     "p-map-series": "^1.0.0"
   },
   "devDependencies": {
-    "@std/esm": "^0.18.0",
     "@types/express": "^4.0.39",
     "@types/node": "^8.0.57",
     "babel-cli": "^6.26.0",

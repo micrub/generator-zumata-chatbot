@@ -12,13 +12,15 @@ export async function setDomainWhitelisting() {
     const url = `${fbGraphUrl}/me/thread_settings?access_token=${fbPageAccessToken}`;
     const fetchOpts = {
       method: 'POST',
+      compress: true,
+      timeout: +process.env.APP_FETCH_TIMEOUT,
       headers: {
         'content-type': 'application/json',
       },
       body: JSON.stringify({
         setting_type: 'domain_whitelisting',
         domain_action_type: 'add',
-        whitelisted_domain: [
+        whitelisted_domains: [
           ...(
             process.env.APP_HOST
               ? [process.env.APP_HOST]
@@ -33,12 +35,12 @@ export async function setDomainWhitelisting() {
 
     /** NOTE: Throw error when fails to whitelist domains */
     if (d.status > 399) {
-      throw new Error(d.data.result);
+      throw d.data;
     }
 
-    console.info(`[MESSENGER_SETUP] Domain whitelisting`, d.data.result);
+    console.info(`[MESSENGER_SETUP] Domain whitelisting`, d.data);
 
-    return d.data.result;
+    return d.data;
   } catch (e) {
     throw e;
   }

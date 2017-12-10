@@ -45,7 +45,7 @@ export declare interface DialogFlowIntent {
 import { FacebookEventSender } from '../facebook/handle-receive-message';
 
 /** Import project dependencies */
-import * as apiai from 'apiai';
+import apiai from 'apiai';
 
 /** Setting up */
 export const dialogFlow = apiai(process.env.APIAI_ACCESS_TOKEN, {

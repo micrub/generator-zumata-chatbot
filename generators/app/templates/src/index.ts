@@ -1,7 +1,7 @@
 // @ts-check
 
 /** Import project dependencies */
-import * as express from 'express';
+import express from 'express';
 
 /** Import route middleware */
 import healthcheck from './route/healthcheck';

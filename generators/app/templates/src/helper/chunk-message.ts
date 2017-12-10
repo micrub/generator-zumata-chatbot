@@ -1,7 +1,7 @@
 // @ts-check
 
 /** Import project dependencies */
-import * as execall from 'execall';
+import execall from 'execall';
 
 /** Setting up */
 const messagesChunkRe =  /.+?(?:(?:\b\.\s*?)|(?:\d+\.\d+)\s*.+)/gi;

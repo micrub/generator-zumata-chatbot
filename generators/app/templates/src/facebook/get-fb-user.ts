@@ -25,7 +25,7 @@ export async function getFbUser(
     const fetchOpts = {
       method: 'GET',
       compress: true,
-      timeout: process.env.APP_FETCH_TIMEOUT,
+      timeout: +process.env.APP_FETCH_TIMEOUT,
     };
     const d = await fetch(url, fetchOpts);
 

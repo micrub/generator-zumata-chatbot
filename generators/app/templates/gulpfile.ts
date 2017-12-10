@@ -1,9 +1,13 @@
+// @ts-check
+
+/** Import project dependencies */
 import * as gulp from 'gulp';
 import * as ts from 'gulp-typescript';
 import * as babel from 'gulp-babel';
 import * as sq from 'gulp-sequence';
 import * as del from 'del';
 
+/** Setting up */
 const isProd = process.env.NODE_ENV === 'production';
 const SRC = 'src';
 const TMP = '.tmp';

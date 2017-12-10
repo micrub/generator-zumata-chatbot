@@ -5,7 +5,7 @@ export declare interface FetchAsJsonOpts {
 }
 
 /** Import project dependencies */
-import * as fetch from 'make-fetch-happen';
+import fetch from 'make-fetch-happen';
 
 export async function fetchAsJson(
   url: string,

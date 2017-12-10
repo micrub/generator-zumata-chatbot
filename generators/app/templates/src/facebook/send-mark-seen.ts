@@ -20,7 +20,7 @@ export async function sendMarkSeen(
     const fetchOpts = {
       method: 'POST',
       compress: true,
-      timeout: process.env.APP_FETCH_TIMEOUT,
+      timeout: +process.env.APP_FETCH_TIMEOUT,
       headers: {
         'content-type': 'application/json',
       },

@@ -27,7 +27,7 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'homepage',
-        message: 'Homepage'
+        message: 'Homepage URL'
       },
       {
         type: 'input',
@@ -37,7 +37,6 @@ module.exports = class extends Generator {
     ];
 
     return this.prompt(prompts).then(props => {
-      // To access props later use this.props.someAnswer;
       this.props = props;
     });
   }

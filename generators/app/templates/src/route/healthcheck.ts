@@ -1,7 +1,7 @@
 // @ts-check
 
 /** Import project dependencies */
-import * as express from 'express';
+import express from 'express';
 
 export function healthcheck(): express.Router {
   return express.Router({ mergeParams: true })
