@@ -43,7 +43,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const TPLS = ['_package.json', '_README.md', '_.gitignore', '_.npmrc'];
+    const TPLS = ['_package.json', '_README.md', '_.gitignore', '_.npmrc', 'Dockerfile'];
     const RAW_GLOB_PATTERNS = ['{.,!(_)}*'];
 
     RAW_GLOB_PATTERNS.map(rawGlobPattern =>
