@@ -39,18 +39,22 @@ Please make sure that you have the followings installed on your machine:
 
 ### Installation
 
-First, install [Yeoman][yeoman-url] and generator-zumata-chatbot using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
+First, install `generator-zumata-chatbot` using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
 
 ```sh
 # Install with NPM
-$ npm install -g yo generator-zumata-chatbot
+$ npm install -g generator-zumata-chatbot
 ```
 
 Then generate your new project:
 
 ```sh
+# Create a new directory if you haven't already.
+# Then change to that new directory.
+$ mkdir my-chatbot-app && cd my-chatbot-app
+
 # Init with yo
-$ yo zumata-chabot
+$ npx yo zumata-chatbot
 ```
 
 ## Getting To Know Yeoman

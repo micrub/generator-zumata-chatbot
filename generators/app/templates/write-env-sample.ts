@@ -10,8 +10,8 @@ const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 const pathToEnvFile = path.resolve(__dirname, './.env');
 const pathToSampleEnvFile = path.resolve(__dirname, './.env-sample');
-const removeCommentRe = /^(\s*|^#\s*(user\sconfig|vend|facebook|dialogflow|ledis|paypal)\s*|([^#].*))$/i;
-const ignoreKeyRe = /^(PORT|USE_REDIS|REDIS_PORT|REDIS_HOST|FB_TYPING_DELAY|FB_MESSAGE_CHAR_LIMIT)=/;
+const removeCommentRe = /^(\s*|^#\s*(user\sconfig|facebook|dialogflow)\s*|([^#].*))$/i;
+const ignoreKeyRe = /^(PORT|FB_TYPING_DELAY|FB_MESSAGE_CHAR_LIMIT)=/;
 const removeKeyValueRe = /^([a-z_]+)=\S*/i;
 
 async function writeEnvSample() {
