@@ -1,4 +1,4 @@
-# <%= packageName %>
+# my-chatbot-app
 
 > Scaffold for chatbot development with Facebook Messenger and DialogFlow
 
@@ -10,7 +10,7 @@ This template is a starting point for building chatbots with Facebook Messenger 
 - [NPM][npm-url] >= 5.5.1 ([Node.js][node-js-url] includes [NPM][npm-url] so there is no need to install separately.)
 - [ngrok][ngrok-url] or [Cloudflare Warp][cloudflare-warp-url]
 - [DialogFlow][dialogflow-url] account
-- Facebook Page for [Facebook Messenger integration][facebook-messenger-integration-url] with DialogFlow. _Skip the **Webhook Configuration** section as you need to start your chatbot application for that._
+- Facebook Page for [Facebook Messenger integration][facebook-messenger-integration-url] with DialogFlow. _Skip the **Webhook Configuration** section as you need to have your chatbot application ready for that._
 
 ### Setup
 
@@ -44,13 +44,13 @@ $ npm install
 $ npm run build:debug && npm run debug
 ```
 
-Next, go back to the [Webhook Configuration][https://dialogflow.com/docs/integrations/facebook] where you left off to complete the last step. Once the webhook is configured successfully, you're off to go to start a conversation with your new chatbot at [Facebook Messenger][facebook-messenger-url].
+Next, go back to the [Webhook Configuration][facebook-messenger-integration-url] where you left off to complete the final step. Once the webhook is configured successfully, you can then start a conversation with your new chatbot at [Facebook Messenger][facebook-messenger-url].
 
 #### Production
 
 To deploy the chatbot application in production, make sure the deployment pod has been setup properly with [Docker][docker-url].
 
-Then, the [Dockerfile][dockerfile-url] should be ready unless you need to tune it if that does not fit your need. Otherwise, the following lines should suffice for general deployment.
+The [Dockerfile][dockerfile-url] should be ready unless you need to tune it if that does not fit your need. Otherwise, the following lines should suffice for general deployment.
 
 ```Dockerfile
 # install local dependencies
@@ -72,9 +72,9 @@ CMD [ "run", "start" ]
 There are **2** different kind of building processes in this template:
 
 - `npm run build` command builds your chatbot application for production.
-- `npm run build:debug` commands builds and serves your application for development purpose.
+- `npm run build:debug` commands builds your application for development purpose.
 
-You can configure the way you build your appliction in the `package.json`.
+You can configure the way you build your appliction in the `package.json` by modifying any of the commands.
 
 ## Application structure
 
@@ -88,11 +88,11 @@ src/
   json.d.ts
 ```
 
-The structure is rather simple and you can basically find every source files in the `src` directory. Each sub-directory contains the modules for each 3rd party applications such as [DialogFlow][dialogflow-url] and [Facebook][facebook-messenger-api-url].
+The structure is rather straightforward and you can basically find every source files in the `src` directory. Each sub-directory contains the modules for each 3rd party applications such as [DialogFlow][dialogflow-url] and [Facebook][facebook-messenger-api-url].
 
 `helper/` contains the commonly use helper functions.
 
-`route/` contains all route middlewares for each different pre-defined route/ path, e.g. **GET /healthcheck** - `.get('/healthcheck', healthcheck())`.
+`route/` contains all route middlewares for each different pre-defined route or path, e.g. **GET /healthcheck** - `.get('/healthcheck', healthcheck())`.
 
 `index.ts` is where the heart of the entire application. Facebook Messenger's setup and server setup is all done here.
 
