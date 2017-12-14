@@ -31,7 +31,7 @@
     "build:debug": "npm run ts && gulp build && npm run cleanup",
     "check": "npm run lint && npm run nsp",
     "cleanup": "rm -rf write-env-sample.js gulpfile.js",
-    "precommit": "npm run check && npm run env",
+    "precommit": "npm run check && npm run env; git add .env-sample",
     "debug":
       "env-cmd ./.env node --inspect --max-old-space-size=8192 --nouse-idle-notification --expose-gc --expose-wasm -r @std/esm dist/",
     "env":
