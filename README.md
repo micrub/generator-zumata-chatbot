@@ -39,11 +39,13 @@ Please make sure that you have the followings installed on your machine:
 
 ### Installation
 
+#### NPM
+
 First, install `generator-zumata-chatbot` using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
 
 ```sh
 # Install with NPM
-$ npm install -g generator-zumata-chatbot
+$ npm install -g yo generator-zumata-chatbot
 ```
 
 Then generate your new project:
@@ -54,7 +56,20 @@ Then generate your new project:
 $ mkdir my-chatbot-app && cd my-chatbot-app
 
 # Init with yo
-$ npx yo zumata-chatbot
+$ yo zumata-chatbot
+```
+
+#### NPX
+
+[npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
+
+```sh
+# Create a new directory if you haven't already.
+# Then change to that new directory.
+$ mkdir my-chatbot-app && cd my-chatbot-app
+
+# Install packages with NPX and execute the CLI with this one-liner
+$ npx -p yo -p generator-zumata-chatbot -- yo zumata-chatbot
 ```
 
 ## Getting To Know Yeoman
@@ -72,6 +87,7 @@ $ npx yo zumata-chatbot
 [eslint-url]: http://eslint.org/docs/user-guide/integrations
 [yeoman-url]: http://yeoman.io
 [npm-url]: https://www.npmjs.com/
+[npx-url]: https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
 [nodejs-url]: https://nodejs.org/
 [facebook-messenger-url]: https://www.messenger.com
 [dialogflow-url]: https://dialogflow.com
