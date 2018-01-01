@@ -2,7 +2,7 @@
 
 /** Import typings */
 import {
-  FacebookEventRecipient as SendMarkSeenRecipient,
+  FacebookEventRecipient as SendReadReceiptRecipient,
 } from './handle-receive-message';
 
 /** Import other modules */
@@ -12,8 +12,8 @@ import fetch from '../helper/fetch-as-json';
 const fbGraphUrl = process.env.FB_GRAPH_URL;
 const fbPageAccessToken = process.env.FB_PAGE_ACCESS_TOKEN;
 
-export async function sendMarkSeen(
-  recipient: SendMarkSeenRecipient,
+export async function sendReadReceipt(
+  recipient: SendReadReceiptRecipient,
   url: string = `${fbGraphUrl}/me/messages?access_token=${fbPageAccessToken}`
 ) {
   try {
@@ -43,4 +43,4 @@ export async function sendMarkSeen(
   }
 }
 
-export default sendMarkSeen;
+export default sendReadReceipt;

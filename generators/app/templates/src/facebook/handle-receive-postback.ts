@@ -13,7 +13,7 @@ import { FacebookEvent } from './handle-receive-message';
 
 /** Import other modules */
 import processIntent from '../dialogflow/process-intent';
-import sendMarkSeen from './send-mark-seen';
+import sendReadReceipt from './send-read-receipt';
 
 export async function handleReceivePostback(
   event: FacebookPostbackEvent
@@ -32,7 +32,7 @@ export async function handleReceivePostback(
      * the bot has seen the message. This can prevent a user from
      * spamming the bot if the requests take some time to return.
      */
-    await sendMarkSeen(sender);
+    await sendReadReceipt(sender);
 
     return await processIntent(sender, payload);
   } catch (e) {

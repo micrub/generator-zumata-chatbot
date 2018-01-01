@@ -26,7 +26,7 @@ export declare interface FacebookMessageEvent extends FacebookEvent {
 }
 
 /** Import other modules */
-import sendMarkSeen from './send-mark-seen';
+import sendReadReceipt from './send-read-receipt';
 import processIntent from '../dialogflow/process-intent';
 
 export async function handleReceiveMessage(
@@ -43,7 +43,7 @@ export async function handleReceiveMessage(
      * the bot has seen the message. This can prevent a user from
      * spamming the bot if the requests take some time to return.
      */
-    await sendMarkSeen(sender);
+    await sendReadReceipt(sender);
 
     return await processIntent(
       sender,
