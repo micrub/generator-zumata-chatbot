@@ -33,6 +33,7 @@ describe('generator-zumata-chatbot:app', () => {
       'gulpfile.ts',
       'tsconfig.json',
       'tslint.json',
+      'tslint.debug.json',
       'package.json',
       'write-env-sample.ts',
 

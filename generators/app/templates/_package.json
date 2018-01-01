@@ -73,7 +73,8 @@
     "nsp": "^3.1.0",
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.4.2",
-    "tslint-config-prettier": "^1.6.0",
+    "tslint-consistent-codestyle": "^1.11.0",
+    "tslint-immutable": "^4.5.0",
     "typescript": "^2.6.2"
   },
   "engines": {
