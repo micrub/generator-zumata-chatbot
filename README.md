@@ -23,7 +23,7 @@
 [![Codacy Badge][codacy-badge]][codacy-url]
 [![codebeat badge][codebeat-badge]][codebeat-url]
 
-> Zumata-specific yeoman generator for scaffolding a chatbot application using [Facebook Messenger][facebook-messenger-url] and [DialogFlow][dialogflow-url].
+> Zumata-specific yeoman generator for scaffolding a chatbot application using [Facebook Messenger][facebook-messenger-url] and [Dialogflow][dialogflow-url].
 
 ## Setup
 

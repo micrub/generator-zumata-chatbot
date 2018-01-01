@@ -2,7 +2,7 @@
 
 /** Import typings */
 import { FacebookEventSender } from '../facebook/handle-receive-message';
-import { DialogFlowIntentResult, DialogFlowIntentResultFulfillmentMessages } from './text-request';
+import { DialogflowIntentResult, DialogflowIntentResultFulfillmentMessages } from './text-request';
 
 /** Import project dependencies */
 import pMapSeries from 'p-map-series';
@@ -33,7 +33,7 @@ export async function processIntent(
     const {
       fulfillment,
       action,
-    } = intent.result || <DialogFlowIntentResult>{};
+    } = intent.result || <DialogflowIntentResult>{};
     const fulfillmentMessagesWithSpeech = fulfillment.messages.filter(n => n.speech);
 
     /** NOTE: Save intent.result.resolvedQuery */
@@ -43,7 +43,7 @@ export async function processIntent(
       case (fulfillmentMessagesWithSpeech.length > 0): {
         const responses = await pMapSeries(
           fulfillmentMessagesWithSpeech,
-          async (message: DialogFlowIntentResultFulfillmentMessages) => {
+          async (message: DialogflowIntentResultFulfillmentMessages) => {
             try {
               switch (message.type) {
                 case MESSAGE_TYPE.TEXT: {

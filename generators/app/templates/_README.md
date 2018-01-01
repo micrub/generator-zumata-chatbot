@@ -1,6 +1,6 @@
 # my-chatbot-app
 
-> Scaffold for chatbot development with Facebook Messenger and DialogFlow
+> Scaffold for chatbot development with Facebook Messenger and Dialogflow
 
 This template is a starting point for building chatbots with Facebook Messenger and Dialogflow using TypeScript in Node.js.
 
@@ -9,8 +9,8 @@ This template is a starting point for building chatbots with Facebook Messenger 
 - [Node.js][node-js-url] >= 8.9.0
 - [NPM][npm-url] >= 5.5.1 ([Node.js][node-js-url] includes [NPM][npm-url] so there is no need to install separately.)
 - [ngrok][ngrok-url] or [Cloudflare Warp][cloudflare-warp-url]
-- [DialogFlow][dialogflow-url] account
-- Facebook Page for [Facebook Messenger integration][facebook-messenger-integration-url] with DialogFlow. _Skip the **Webhook Configuration** section as you need to have your chatbot application ready for that._
+- [Dialogflow][dialogflow-url] account
+- Facebook Page for [Facebook Messenger integration][facebook-messenger-integration-url] with Dialogflow. _Skip the **Webhook Configuration** section as you need to have your chatbot application ready for that._
 
 ### Setup
 
@@ -88,7 +88,7 @@ src/
   json.d.ts
 ```
 
-The structure is rather straightforward and you can basically find every source files in the `src` directory. Each sub-directory contains the modules for each 3rd party applications such as [DialogFlow][dialogflow-url] and [Facebook][facebook-messenger-api-url].
+The structure is rather straightforward and you can basically find every source files in the `src` directory. Each sub-directory contains the modules for each 3rd party applications such as [Dialogflow][dialogflow-url] and [Facebook][facebook-messenger-api-url].
 
 `helper/` contains the commonly use helper functions.
 

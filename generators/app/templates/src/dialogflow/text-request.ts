@@ -1,44 +1,44 @@
 // @ts-check
 
-export declare interface DialogFlowIntentResultFulfillmentMessages {
+export declare interface DialogflowIntentResultFulfillmentMessages {
   type: number;
   speech: string;
   payload?: {
     [key: string]: any;
   };
 }
-export declare interface DialogFlowIntentResultFulfillmentMetadata {
+export declare interface DialogflowIntentResultFulfillmentMetadata {
   intentId: string;
   intentName: string;
   webhookForSlotFillingUsed: boolean;
   webhookUsed: boolean
 }
-export declare interface DialogFlowIntentResultFulfillmentStatus {
+export declare interface DialogflowIntentResultFulfillmentStatus {
   code: number;
   errorType: string;
   webhookTimedOut: boolean;
 }
-export declare interface DialogFlowIntentResult {
+export declare interface DialogflowIntentResult {
   action: string;
   actionIncomplete: boolean;
   contexts: [any];
   fulfillment: {
     speech: string;
-    messages: [DialogFlowIntentResultFulfillmentMessages];
-    metadata: DialogFlowIntentResultFulfillmentMetadata;
+    messages: [DialogflowIntentResultFulfillmentMessages];
+    metadata: DialogflowIntentResultFulfillmentMetadata;
     parameters: {
       [key: string]: any;
     };
     resolvedQuery: string;
     sessionId: string;
-    status: DialogFlowIntentResultFulfillmentStatus;
+    status: DialogflowIntentResultFulfillmentStatus;
     timestamp: Date;
   };
 }
-export declare interface DialogFlowIntent {
+export declare interface DialogflowIntent {
   id: string;
   lang: string;
-  result: DialogFlowIntentResult;
+  result: DialogflowIntentResult;
 }
 
 /** Import typings */
@@ -56,7 +56,7 @@ export const dialogFlow = apiai(process.env.APIAI_ACCESS_TOKEN, {
 export function textRequest(
   sender: FacebookEventSender,
   text: string
-): Promise<DialogFlowIntent> {
+): Promise<DialogflowIntent> {
   const rq = dialogFlow.textRequest(text, {
     sessionId: sender.id,
   });
