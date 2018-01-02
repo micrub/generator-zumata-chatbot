@@ -22,10 +22,10 @@ export async function handleReceivePostback(
     const {
       sender,
       postback,
-    } = event || <FacebookPostbackEvent>{};
+    } = event || {} as FacebookPostbackEvent;
     const {
       payload,
-    } = postback || <FacebookPostbackEventPostback>{};
+    } = postback || {} as FacebookPostbackEventPostback;
 
     /**
      * It's good practice to send the user a read receipt so they know

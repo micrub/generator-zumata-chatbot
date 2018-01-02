@@ -26,8 +26,8 @@ export declare interface FacebookMessageEvent extends FacebookEvent {
 }
 
 /** Import other modules */
-import sendReadReceipt from './send-read-receipt';
 import processIntent from '../dialogflow/process-intent';
+import sendReadReceipt from './send-read-receipt';
 
 export async function handleReceiveMessage(
   event: FacebookMessageEvent
@@ -36,7 +36,7 @@ export async function handleReceiveMessage(
     const {
       sender,
       message,
-    } = event || <FacebookMessageEvent>{};
+    } = event || {} as FacebookMessageEvent;
 
     /**
      * It's good practice to send the user a read receipt so they know

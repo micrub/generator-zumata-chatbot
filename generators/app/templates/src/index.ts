@@ -53,5 +53,3 @@ app.listen(PORT, async () => {
     console.error('[FATAL_ERROR]', e);
   }
 });
-
-

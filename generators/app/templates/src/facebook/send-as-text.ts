@@ -13,9 +13,9 @@ import {
 import pMapSeries from 'p-map-series';
 
 /** Import other modules */
-import sendTypingBubble from './send-typing-bubble';
-import fetch from '../helper/fetch-as-json';
 import chunkMessage from '../helper/chunk-message';
+import fetch from '../helper/fetch-as-json';
+import sendTypingBubble from './send-typing-bubble';
 
 /** Setting up */
 const fbGraphUrl = process.env.FB_GRAPH_URL;

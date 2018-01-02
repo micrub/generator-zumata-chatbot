@@ -10,7 +10,7 @@ import handleReceivePostback from '../facebook/handle-receive-postback';
 async function getWebhook(req, res, next) {
   try {
     if (req.query['hub.verify_token'] === process.env.FB_VERIFY_TOKEN) {
-      return res.status(200).send(req.query)
+      return res.status(200).send(req.query);
     }
 
     /** NOTE: Send error with HTTP status 200 */
@@ -69,4 +69,3 @@ export function webhook(): express.Router {
 }
 
 export default webhook;
-

@@ -11,7 +11,7 @@ export declare interface DialogflowIntentResultFulfillmentMetadata {
   intentId: string;
   intentName: string;
   webhookForSlotFillingUsed: boolean;
-  webhookUsed: boolean
+  webhookUsed: boolean;
 }
 export declare interface DialogflowIntentResultFulfillmentStatus {
   code: number;

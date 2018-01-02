@@ -19,7 +19,7 @@ const fbPageAccessToken = process.env.FB_PAGE_ACCESS_TOKEN;
 
 export async function getFbUser(
   senderId: string,
-  url: string = `${fbGraphUrl}/${senderId}/?access_token=${fbPageAccessToken}`,
+  url: string = `${fbGraphUrl}/${senderId}/?access_token=${fbPageAccessToken}`
 ): Promise<GetFbUser> {
   try {
     const fetchOpts = {

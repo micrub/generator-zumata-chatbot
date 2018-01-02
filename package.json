@@ -1,8 +1,7 @@
 {
   "name": "generator-zumata-chatbot",
   "version": "0.2.0",
-  "description":
-    "Generator for chatbot development using Facebook Messenger and Dialogflow",
+  "description": "Generator for chatbot development using Facebook Messenger and Dialogflow",
   "keywords": [
     "chatbot",
     "dialogflow",
@@ -20,7 +19,9 @@
     "email": "rong_sen.ng@zumata.com",
     "url": "https://github.com/motss"
   },
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "main": "generators/index.js",
   "repository": "git@github.com:Zumata/generator-zumata-chatbot.git",
   "scripts": {
@@ -34,8 +35,13 @@
       "jest": true,
       "node": true
     },
-    "extends": ["xo", "prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -73,7 +79,13 @@
     "collectCoverage": true
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "./*.json": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

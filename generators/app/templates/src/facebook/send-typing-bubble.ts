@@ -15,7 +15,7 @@ const fbPageAccessToken = process.env.FB_PAGE_ACCESS_TOKEN;
 export async function sendTypingBubble(
   recipient: SendTypingBubbleRecipient,
   showTyping: boolean = true,
-  url: string = `${fbGraphUrl}/me/messages?access_token=${fbPageAccessToken}`,
+  url: string = `${fbGraphUrl}/me/messages?access_token=${fbPageAccessToken}`
 ) {
   try {
     const fetchOpts = {

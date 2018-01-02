@@ -21,7 +21,9 @@ export async function splitMessage(
     const chunks = matches
       .map(n => (n.match || '').trim())
       .reduce((p, n) => {
-        if (p.length < 1) return [...p, n];
+        if (p.length < 1) {
+          return [...p, n];
+        }
 
         const lastChunk = `${p.slice(-1)}`;
         const isMessageTooLong = lastChunk.length + n.length > fbMessageCharLimit;
@@ -59,4 +61,3 @@ export async function chunkMessage(
 }
 
 export default chunkMessage;
-

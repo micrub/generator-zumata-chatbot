@@ -6,10 +6,18 @@
     "tslint-config-airbnb"
   ],
   "rules": {
-    "align": [true, "parameters", "statements", "members"],
+    "align": [
+      true,
+      "parameters",
+      "statements",
+      "members"
+    ],
     "no-console": false,
     "import-name": false,
-    "interface-name": [true, "never-prefix"],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
     "no-duplicate-imports": false,
     "no-object-literal-type-assertion": false,
     "ordered-imports": [

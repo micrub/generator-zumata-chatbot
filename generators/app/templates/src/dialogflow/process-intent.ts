@@ -2,18 +2,21 @@
 
 /** Import typings */
 import { FacebookEventSender } from '../facebook/handle-receive-message';
-import { DialogflowIntentResult, DialogflowIntentResultFulfillmentMessages } from './text-request';
+import {
+  DialogflowIntentResult,
+  DialogflowIntentResultFulfillmentMessages,
+} from './text-request';
 
 /** Import project dependencies */
 import pMapSeries from 'p-map-series';
 
 /** Import other modules */
 // tslint:disable-next-line:no-duplicate-imports
-import textRequest from './text-request';
-import ledis from '../helper/ledis';
-import sendAsText from '../facebook/send-as-text';
 import sendAsCustomPayload from '../facebook/send-as-custom-payload';
+import sendAsText from '../facebook/send-as-text';
+import ledis from '../helper/ledis';
 import handleWelcomeIntent from './handle-welcome-intent';
+import textRequest from './text-request';
 
 /** Setting up */
 const MESSAGE_TYPE = {
@@ -33,7 +36,7 @@ export async function processIntent(
     const {
       fulfillment,
       action,
-    } = intent.result || <DialogflowIntentResult>{};
+    } = intent.result || {} as DialogflowIntentResult;
     const fulfillmentMessagesWithSpeech = fulfillment.messages.filter(n => n.speech);
 
     /** NOTE: Save intent.result.resolvedQuery */
