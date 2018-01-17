@@ -34,13 +34,14 @@ export async function processIntent(
   try {
     const intent = await textRequest(sender, text);
     const {
-      fulfillment,
       action,
+      fulfillment,
+      resolvedQuery,
     } = intent.result || {} as DialogflowIntentResult;
     const fulfillmentMessagesWithSpeech = fulfillment.messages.filter(n => n.speech);
 
     /** NOTE: Save intent.result.resolvedQuery */
-    await ledis.set(`${sender.id}::resolvedQuery`, fulfillment.resolvedQuery);
+    await ledis.set(`${sender.id}::resolvedQuery`, resolvedQuery);
 
     switch (true) {
       case (fulfillmentMessagesWithSpeech.length > 0): {
