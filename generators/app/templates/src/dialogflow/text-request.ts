@@ -19,26 +19,28 @@ export declare interface DialogflowIntentResultFulfillmentStatus {
   webhookTimedOut: boolean;
 }
 export declare interface DialogflowIntentResult {
+  source: string;
+  resolvedQuery: string;
   action: string;
   actionIncomplete: boolean;
-  contexts: [any];
+  parameters: {
+    [key: string]: any;
+  };
+  contexts: any[];
+  metadata: DialogflowIntentResultFulfillmentMetadata;
   fulfillment: {
     speech: string;
-    messages: [DialogflowIntentResultFulfillmentMessages];
-    metadata: DialogflowIntentResultFulfillmentMetadata;
-    parameters: {
-      [key: string]: any;
-    };
-    resolvedQuery: string;
-    sessionId: string;
-    status: DialogflowIntentResultFulfillmentStatus;
-    timestamp: Date;
+    messages: DialogflowIntentResultFulfillmentMessages[];
   };
+  score: number;
 }
 export declare interface DialogflowIntent {
   id: string;
+  timestamp: string; /** UTC Date string */
   lang: string;
   result: DialogflowIntentResult;
+  status: DialogflowIntentResultFulfillmentStatus;
+  sessionId: string;
 }
 
 /** Import typings */
