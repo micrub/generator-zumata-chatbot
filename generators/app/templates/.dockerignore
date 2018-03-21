@@ -12,8 +12,6 @@ npm-debug.log*
 yarn-error.log*
 
 # folders
-dist/
-node_modules/
 test*/
 demo*/
 
@@ -22,3 +20,6 @@ gulpfile*.js
 *.js
 *.jsx
 *.d.ts*
+
+# Do not ignore
+!**/json.d.ts

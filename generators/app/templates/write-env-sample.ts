@@ -1,9 +1,9 @@
 // @ts-check
 
 /** Import project dependencies */
-import * as path from 'path';
-import * as fs from 'fs';
-import * as util from 'util';
+import path from 'path';
+import fs from 'fs';
+import util from 'util';
 
 /** Import other modules */
 const readFile = util.promisify(fs.readFile);

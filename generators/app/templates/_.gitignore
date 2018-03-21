@@ -22,3 +22,6 @@ gulpfile*.js
 *.js
 *.jsx
 *.d.ts*
+
+# Do not ignore
+!**/json.d.ts

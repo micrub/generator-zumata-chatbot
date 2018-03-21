@@ -21,7 +21,7 @@ export async function handleWelcomeIntent(
      */
     if (
       Object.hasOwnProperty.call(fbUser, 'first_name')
-      && typeof fbUser.first_name !== 'undefined'
+        && typeof fbUser.first_name !== 'undefined'
     ) {
       await sendAsText(sender, {
         text: `Good day, ${fbUser.first_name}`,

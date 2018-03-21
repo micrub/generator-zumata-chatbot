@@ -13,7 +13,7 @@ COPY . ./
 RUN npm install --quiet --update-binary
 
 # run build
-RUN npm run build
+RUN npm run build --quiet
 
 # ports
 EXPOSE 5000

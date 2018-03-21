@@ -13,6 +13,7 @@
       "members"
     ],
     "no-console": false,
+    "no-debugger": false,
     "import-name": false,
     "interface-name": [
       true,

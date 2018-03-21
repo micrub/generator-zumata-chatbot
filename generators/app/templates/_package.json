@@ -39,7 +39,7 @@
     "nsp": "nsp check",
     "serve": "node --max-old-space-size=8192 --nouse-idle-notification --expose-gc --expose-wasm -r @std/esm dist/",
     "start": "npm run serve",
-    "ts": "tsc --target esnext --lib esnext,esnext.asynciterable --module commonjs gulpfile.ts"
+    "ts": "tsc --target esnext --lib esnext,esnext.array,esnext.asynciterable --esModuleInterop --allowSyntheticDefaultImports --module commonjs gulpfile.ts"
   },
   "dependencies": {
     "@std/esm": "^0.18.0",
@@ -53,7 +53,6 @@
     "@types/express": "^4.0.39",
     "@types/node": "^8.0.57",
     "babel-cli": "^6.26.0",
-    "babel-plugin-transform-function-bind": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
