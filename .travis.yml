@@ -3,6 +3,6 @@ dist: trusty
 node_js:
   - v9
   - v8
-after_script:
+after_success:
   - 'cat ./coverage/lcov.info | coveralls'
   - 'cat ./coverage/lcov.info | codecov'
