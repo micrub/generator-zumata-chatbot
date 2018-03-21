@@ -8,17 +8,16 @@
 
 [![NPM][nodei-badge]][nodei-url]
 
-[![Build Status][travis-badge]][travis-url]
 [![Version][version-badge]][version-url]
 [![Downloads][downloads-badge]][downloads-url]
 [![MIT License][mit-license-badge]][mit-license-url]
-[![Dependency Status][daviddm-badge]][daviddm-url]
-[![NSP Status][nsp-badge]][nsp-url]
-
 [![Code of Conduct][coc-badge]][coc-url]
 
-[![Coverage percentage][coveralls-badge]][coveralls-url]
+[![Build Status][travis-badge]][travis-url]
+[![Dependency Status][daviddm-badge]][daviddm-url]
+[![NSP Status][nsp-badge]][nsp-url]
 [![codecov][codecov-badge]][codecov-url]
+[![Coverage percentage][coveralls-badge]][coveralls-url]
 
 [![Codacy Badge][codacy-badge]][codacy-url]
 [![codebeat badge][codebeat-badge]][codebeat-url]
@@ -94,34 +93,32 @@ $ npx -p yo -p generator-zumata-chatbot -- yo zumata-chatbot
 
 [nodei-badge]: https://nodei.co/npm/generator-zumata-chatbot.png?downloads=true&downloadRank=true&stars=true
 
-[travis-badge]: https://img.shields.io/travis/Zumata/generator-zumata-chatbot.svg?style=flat-square
 [version-badge]: https://img.shields.io/npm/v/generator-zumata-chatbot.svg?style=flat-square
 [downloads-badge]: https://img.shields.io/npm/dm/generator-zumata-chatbot.svg?style=flat-square
 [mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[daviddm-badge]: https://img.shields.io/david/Zumata/generator-zumata-chatbot.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge
-
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 
-[coveralls-badge]: https://coveralls.io/repos/github/Zumata/generator-zumata-chatbot/badge.svg?branch=master
+[travis-badge]: https://img.shields.io/travis/Zumata/generator-zumata-chatbot.svg?style=flat-square
+[daviddm-badge]: https://img.shields.io/david/Zumata/generator-zumata-chatbot.svg?style=flat-square
+[nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge
 [codecov-badge]: https://codecov.io/gh/Zumata/generator-zumata-chatbot/branch/master/graph/badge.svg
+[coveralls-badge]: https://coveralls.io/repos/github/Zumata/generator-zumata-chatbot/badge.svg?branch=master
 
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9
 [codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a
 
 [nodei-url]: https://nodei.co/npm/generator-zumata-chatbot/
 
-[travis-url]: https://travis-ci.org/Zumata/generator-zumata-chatbot
 [version-url]: https://www.npmjs.com/package/generator-zumata-chatbot
 [downloads-url]: http://www.npmtrends.com/generator-zumata-chatbot
 [mit-license-url]: https://github.com/Zumata/generator-zumata-chatbot/blob/master/LICENSE
-[daviddm-url]: https://david-dm.org/Zumata/generator-zumata-chatbot
-[nsp-url]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646
-
 [coc-url]: https://github.com/Zumata/generator-zumata-chatbot/blob/master/CODE_OF_CONDUCT.md
 
-[coveralls-url]: https://coveralls.io/github/Zumata/generator-zumata-chatbot?branch=master
+[travis-url]: https://travis-ci.org/Zumata/generator-zumata-chatbot
+[daviddm-url]: https://david-dm.org/Zumata/generator-zumata-chatbot
+[nsp-url]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646
 [codecov-url]: https://codecov.io/gh/Zumata/generator-zumata-chatbot
+[coveralls-url]: https://coveralls.io/github/Zumata/generator-zumata-chatbot?branch=master
 
 [codacy-url]: https://www.codacy.com/app/motss/generator-zumata-chatbot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Zumata/generator-zumata-chatbot&amp;utm_campaign=Badge_Grade
 [codebeat-url]: https://codebeat.co/projects/github-com-zumata-generator-zumata-chatbot-master
